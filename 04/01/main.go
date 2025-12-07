@@ -6,6 +6,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/fatih/color"
 	"github.com/gosuri/uilive"
 )
 
@@ -53,6 +54,7 @@ func checkData(d [][]string) int {
 				}
 
 				if occupied < 4 {
+					output = output[:len(output)-1] + color.GreenString("")
 					movable++
 				}
 			}
