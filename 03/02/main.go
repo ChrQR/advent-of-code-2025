@@ -32,8 +32,6 @@ func highestNumber(input string) int {
 			highest = num
 			highestIdx = i
 		}
-		// len 24
-		// i 12
 
 		if i+(12-len(rslt)) == len(input) {
 			rslt += string(input[highestIdx])
